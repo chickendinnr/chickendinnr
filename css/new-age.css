@@ -512,6 +512,7 @@ ul {
 
 .contact1 form p {
   margin: 0;
+  /* width: 500px; */
 }
 
 .contact1 form .full {
@@ -521,9 +522,13 @@ ul {
 .contact1 form button,
 .contact1 form input,
 .contact1 form textarea {
-  width: 100%;
+  width: 150px;
   padding: 1em;
   border: 1px solid #c9e6ff;
+}
+
+#email {
+  width: 750px;
 }
 
 .contact1 form button {
