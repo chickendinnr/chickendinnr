@@ -72,7 +72,9 @@ function submitForm(e) {
   // Get Values
   let email = getInputVal("email");
 
-  console.log(email);
+  // Save message
+
+  saveMessage(email);
 }
 
 // Function to get form values
