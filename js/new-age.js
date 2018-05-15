@@ -52,12 +52,12 @@
 
 // Initialize Firebase
 var config = {
-  apiKey: "AIzaSyBezI0s1Au28QTw0FWUrNbn8uYcB-iqMok",
-  authDomain: "contactform-bc5c0.firebaseapp.com",
-  databaseURL: "https://contactform-bc5c0.firebaseio.com",
-  projectId: "contactform-bc5c0",
-  storageBucket: "contactform-bc5c0.appspot.com",
-  messagingSenderId: "104228030019"
+  apiKey: "AIzaSyCxJuTlAg7uaZgViNAO8GtP3691ZYMHUrY",
+  authDomain: "contactform-f3f52.firebaseapp.com",
+  databaseURL: "https://contactform-f3f52.firebaseio.com",
+  projectId: "contactform-f3f52",
+  storageBucket: "",
+  messagingSenderId: "866809098065"
 };
 firebase.initializeApp(config);
 
@@ -75,6 +75,14 @@ function submitForm(e) {
   // Save message
 
   saveMessage(email);
+
+  // Show alert
+  document.querySelector(".alert").style.display = "block";
+
+  // Hide alert after 3 seconds
+  setTimeout(function() {
+    document.querySelector(".alert").style.display = "none";
+  }, 3000);
 }
 
 // Function to get form values
