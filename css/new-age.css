@@ -185,6 +185,20 @@ header.masthead .device-container .screen img {
   padding-top: 75px;
 }
 
+.video {
+  position: absolute;
+  top: 50%;
+  left: 8.5%;
+}
+
+.rotate90 {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
 @media (min-width: 992px) {
   header.masthead {
     height: 100vh;
@@ -201,6 +215,11 @@ header.masthead .device-container .screen img {
   }
   header.masthead .device-container {
     max-width: 325px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
   }
 }
 
@@ -256,6 +275,14 @@ section.features .device-container,
 section.features .feature-item {
   max-width: 325px;
   margin: 0 auto;
+}
+
+section.features .device {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 section.features .device-container {
@@ -421,7 +448,7 @@ footer ul li a.active {
 }
 
 .bg-color {
-  background-color: #ea4049;
+  background-color: #eedec4;
 }
 
 .text-primary {
@@ -460,10 +487,6 @@ footer ul li a.active {
   padding: 15px 45px;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 ul {
   list-style: none;
   padding: 0;
@@ -475,10 +498,6 @@ ul {
 
 .brand span {
   color: #fff;
-}
-
-.wrapper {
-  box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
 }
 
 .wrapper > * {
@@ -496,7 +515,7 @@ ul {
 }
 
 .contact1 {
-  background: #f9feff;
+  background: #eee;
 }
 
 /* FORM STYLES */
@@ -532,17 +551,17 @@ ul {
 }
 
 .contact1 form button {
-  background: #c9e6ff;
+  background: #d3ebf7;
   border: 0;
   text-transform: uppercase;
 }
 
 .contact1 form button:hover,
 .contact1 form button:focus {
-  background: #92bde7;
-  color: #fff;
+  background: #eedec4;
+  color: #222222;
   outline: 0;
-  transition: background-color 2s ease-out;
+  transition: background-color 1s ease-out;
 }
 
 .alert {

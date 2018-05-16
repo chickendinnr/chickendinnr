@@ -80,9 +80,15 @@ function submitForm(e) {
   document.querySelector(".alert").style.display = "block";
 
   // Hide alert after 3 seconds
-  setTimeout(function() {
-    document.querySelector(".alert").style.display = "none";
-  }, 3000);
+  // setTimeout(function() {
+  //   document.querySelector(".alert").style.display = "none";
+  // }, 3000);
+
+  // var fade = document.getElementById("fade").style;
+  // fade.opacity = 1;
+  // (function fade() {
+  //   (.opacity -= 0.1) < 0 ? (s.display = "none") : setTimeout(fade, 40);
+  // })();
 
   // Reset form
   document.getElementById("contactForm").reset();
